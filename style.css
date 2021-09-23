@@ -1,0 +1,147 @@
+body {
+  background-color: black;
+  background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+@media screen and (max-width: 299px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 799px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 120px auto;
+  width: 80%;
+  height: auto;
+  background-color: #1b2259;
+  border-radius: 15px;
+  box-shadow: 0px 2px 2px 2px #e8ebee;
+}
+.in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 40%;
+  height: auto;
+  margin: 45px auto;
+}
+
+.title {
+  color: rgb(233, 221, 221);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.title p {
+  text-align: center;
+  color: rgb(201, 175, 175);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+}
+.label {
+  margin-top: 40px;
+  color: rgb(202, 183, 183);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.input input {
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 15px auto;
+  width: 95%;
+}
+.input input:focus {
+  border: none;
+  outline: none;
+  border: 1px solid greenyellow;
+  background-color: rgb(190, 168, 168);
+}
+#even {
+  background-color: dodgerblue;
+  color: white;
+}
+#odd {
+  background-color: rgb(163, 117, 31);
+  color: white;
+}
+#prime {
+  background-color: rgb(150, 53, 53);
+  color: white;
+}
+#even:hover {
+  background-color: white;
+  color: dodgerblue;
+}
+#odd:hover {
+  background-color: white;
+  color: orange;
+}
+
+#prime:hover {
+  background-color: white;
+  color: red;
+}
+.btn input {
+  flex-wrap: wrap;
+  padding: 5px;
+  border-radius: 8px;
+  width: 65px;
+  border: none;
+  margin: 10px;
+}
+#reset {
+  width: 100%;
+  border: none;
+  background-color: seagreen;
+  color: white;
+  padding: 6px;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+#reset:hover {
+  background-color: grey;
+  color: white;
+}
+.reset {
+  width: 100%;
+}
+/*batas input dan output*/
+
+.out {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin: 45px auto;
+}
+
+.result-title {
+  position: absolut;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: auto;
+  flex-wrap: wrap;
+}
+.result p {
+  color: white;
+}

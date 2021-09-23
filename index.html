@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="in">
+        <div class="title">
+          <h3>Series of Even, Odd and Prime Number</h3>
+          <p>Please Enter the Number You Want Then Select One of the Following Buttons Then the Results Will Match the Button You Choose Such as Even, Odd, or Prime Numbers</p>
+        </div>
+        <div class="form">
+          <form action="" method="POST">
+            <div class="label">
+              <label for="number">Input Number</label>
+            </div>
+            <div class="input">
+              <input type="number" id="number" />
+            </div>
+            <div class="btn">
+              <input type="button" value="Even" id="even" onclick="evens()" />
+              <input type="button" value="Odd" id="odd" onclick="odds()" />
+              <input type="button" value="Prime" id="prime" onclick="primes()" />
+            </div>
+            <div class="reset">
+              <input type="reset" value="Reset" id="reset" onclick="reset()" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="out">
+        <div class="show">
+          <div class="result-title">
+            <h3>RESULT</h3>
+            <i class="fas fa-cash-register"></i>
+          </div>
+        </div>
+        <div class="result">
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://use.fontawesome.com/176b7e4172.js"></script>
+  </body>
+</html>
